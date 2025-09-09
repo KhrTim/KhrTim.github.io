@@ -9,6 +9,8 @@ redirect_from:
 
 I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, specializing in Reinforcement Learning and Autonomous Systems. My research focuses on feature selection, information theory, and efficient network design for real-time applications.
 
+📄 **[Download My CV](/files/TimurKhairulov_CV.tex)** (LaTeX source)
+
 ## Current Research
 I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
 

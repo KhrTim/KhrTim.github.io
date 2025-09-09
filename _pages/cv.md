@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+📄 **[Download CV (LaTeX source)](/files/TimurKhairulov_CV.tex)** | 🎯 [View Online Version](#education)
+
 Education
 ======
 * **M.S. in Artificial Intelligence**, Chung-Ang University, February 2024--Present
