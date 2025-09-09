@@ -227,8 +227,10 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
+  posts:
+    output: false
 
 
 # These settings control how pages and collections are included in the site
