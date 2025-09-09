@@ -28,7 +28,7 @@ author:
   bio              : "M.S. Student in AI | Reinforcement Learning & Autonomous Systems"
   location         : "Seoul, South Korea"
   employer         : "Chung-Ang University"
-  uri              : "/files/TimurKhairulov_CV.tex" # URL
+  uri              : # URL
   email            : "timurkhairulov@cau.ac.kr" 
 
   # Academic websites

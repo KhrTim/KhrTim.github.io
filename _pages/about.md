@@ -7,18 +7,19 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, specializing in Reinforcement Learning and Autonomous Systems. My research focuses on feature selection, information theory, and efficient network design for real-time applications.
+I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul. During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in Reinforcement Learning and Autonomous Systems, with a focus on developing efficient and reliable methods for real-world applications.
 
-📄 **[Download My CV](/files/TimurKhairulov_CV.tex)** (LaTeX source)
+📄 **[Download My CV](/files/Academic_CV.pdf)** (LaTeX source)
 
 ## Current Research
 I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
 
 ## Research Interests
-- **Reinforcement Learning**: Advanced algorithms and their applications in autonomous systems
-- **Autonomous Systems**: Self-driving vehicles and robotic systems
-- **Feature Selection & Information Theory**: Unsupervised methods and entropy optimization
-- **Efficient Network Design**: Optimized architectures for real-time applications
+- **Reinforcement Learning & Autonomous Systems (PhD focus)**: Developing algorithms for decision-making in robotics and self-driving systems.
+- **Feature Selection & Information Theory (Master’s focus)**: Unsupervised methods, entropy-based approaches, and dimensionality reduction.
+- **Data Imputation & Time Series Prediction**: Handling missing values and building predictive models for temporal data.
+- **Computer Vision & Generative AI**: Image analysis, representation learning, and generative modeling.
+- **Efficient Network Design**: Optimized architectures for real-time and resource-constrained applications.
 
 ## Recent Publications
 - **ChainImputer**: A Neural Network-Based Iterative Imputation Method Using Cumulative Features (*MDPI Symmetry*, 2025)
@@ -53,8 +54,8 @@ I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entr
 - **[Traffic Sign Recognition](https://github.com/KhrTim/Traffic-Signs-Recognition-Thesis)**: Deep learning models for autonomous driving
 
 ## Teaching & Mentoring
-- **Teaching Assistant** for Computer Vision course at Chung-Ang University (Spring 2025)
-- **Research Assistant** in Robotarium assembly and launch at Electrotechnical University "LETI"
+- **Teaching Assistant** Computer Vision course, Chung-Ang University (Spring 2025)
+- **Research Assistant** Assisted in the assembly and launch of the Robotarium at Electrotechnical University "LETI," supporting robotics infrastructure setup and student projects
 
 ## Contact & Collaboration
 I'm always interested in collaborating on research projects related to reinforcement learning, autonomous systems, and AI applications. Feel free to explore my publications, teaching materials, and project portfolio using the navigation above.
