@@ -9,7 +9,7 @@ redirect_from:
 
 I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul. During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in Reinforcement Learning and Autonomous Systems, with a focus on developing efficient and reliable methods for real-world applications.
 
-📄 **[Download My CV](/files/Academic_CV.pdf)** (LaTeX source)
+📄 **[Download My CV](/files/Academic_CV.pdf)** (PDF version)
 
 ## Current Research
 I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
