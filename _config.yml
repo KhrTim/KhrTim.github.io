@@ -22,7 +22,7 @@ repository               : "KhrTim/KhrTim.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "timur.jpg"
   name             : "Timur Khairulov"
   pronouns         : # example: "she/her"  
   bio              : "M.S. Student in AI | Reinforcement Learning & Autonomous Systems"
