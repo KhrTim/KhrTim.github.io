@@ -6,6 +6,7 @@ permalink: /teaching/robotarium-bachelor-assistance
 venue: "Electrotechnical University 'LETI', Department of Computer Science"
 date: 2022-01-01
 location: "St. Petersburg, Russia"
+excerpt: "Assisted professor in assembling and launching Russia's largest Robotarium facility. Gained hands-on experience with multi-robot systems, hardware integration, and remote laboratory infrastructure."
 ---
 
 ## Russia's Largest Robotarium Project

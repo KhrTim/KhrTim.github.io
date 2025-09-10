@@ -6,6 +6,7 @@ permalink: /teaching/2025-spring-computer-vision
 venue: "Chung-Ang University, Department of Artificial Intelligence"
 date: 2025-03-01
 location: "Seoul, South Korea"
+excerpt: "Teaching Assistant for Computer Vision course at Chung-Ang University. Prepared course materials, designed examinations, and supported students in understanding advanced computer vision concepts."
 ---
 
 ## Responsibilities
