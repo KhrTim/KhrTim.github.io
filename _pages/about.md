@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, working in the [AutoML Lab](http://ml.cau.ac.kr/). During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in Reinforcement Learning and Autonomous Systems, with a focus on developing efficient and reliable methods for real-world applications.
+I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, working in the [**AutoML Lab**](http://ml.cau.ac.kr/). During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in **Reinforcement Learning and Autonomous Systems**, with a focus on developing efficient and reliable methods for real-world applications.
 
-📄 **[Download My CV](/files/Academic_CV.pdf)** (PDF version)
+---
+
+📄 **[Download My CV](/files/Academic_CV.pdf)** (PDF) | 📄 **[LaTeX Source](/files/TimurKhairulov_CV.tex)** (TEX)
 
 ## Current Research
 I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
@@ -37,27 +39,31 @@ I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entr
 - **B.S. in Computer Science** - Electrotechnical University "LETI" (2018-2023)
   - GPA: 4.3/5, with exchange semester at Inha University
 
-## Technical Expertise
-**Programming**: C/C++, Python, MATLAB, Dart, SQL  
-**AI/ML**: PyTorch, OpenCV, Scikit-learn, Deep Learning, Computer Vision  
-**Development**: Git, Linux, Docker, Flutter, Qt
+## 💻 Technical Expertise
+- **Programming Languages**: C/C++, Python, MATLAB, Dart, SQL  
+- **AI/ML Frameworks**: PyTorch, OpenCV, Scikit-learn, TensorFlow
+- **Specializations**: Deep Learning, Computer Vision, Reinforcement Learning
+- **Development Tools**: Git, Linux, Docker, Flutter, Qt, Jenkins
 
-## Notable Achievements
+## 🏆 Notable Achievements
 - **Yandex Algorithms Bootcamp 3.0** (2023): Top 200 out of 2000 participants
 - **CAYSS Scholarship** at Chung-Ang University (2024-Present)
 - **Robotarium Project**: Helped assemble Russia's largest robotarium at LETI University
 
-## Featured Projects
-- **[BAGen](https://github.com/KhrTim/BAGen)**: Automatic production and visualization of children songs using PyTorch
-- **[Feature Selection Algorithms](https://github.com/KhrTim/Feature_Selection)**: Research implementations supporting multiple publications
-- **[Menu Management App](https://product-list-cv.web.app/#/)**: Cross-platform Flutter application with Firebase backend
-- **[Traffic Sign Recognition](https://github.com/KhrTim/Traffic-Signs-Recognition-Thesis)**: Deep learning models for autonomous driving
+## 🚀 Featured Projects
+- **[BAGen](https://github.com/KhrTim/BAGen)**: AI-powered system for automatic children's song video generation using PyTorch
+- **[Feature Selection Algorithms](https://github.com/KhrTim/Feature_Selection)**: Research implementations supporting multiple publications  
+- **[L1-L2 Communication Visualization](#)**: Enterprise application for telecom analysis (YADRO project)
+- **[Menu Management App](https://product-list-cv.web.app/#/)**: Live cross-platform Flutter/Firebase application
 
-## Teaching & Mentoring
-- **Teaching Assistant** Computer Vision course, Chung-Ang University (Spring 2025)
-- **Research Assistant** Assisted in the assembly and launch of the Robotarium at Electrotechnical University "LETI," supporting robotics infrastructure setup and student projects
+## 🎓 Teaching & Mentoring
+- **Teaching Assistant**: Computer Vision course, Chung-Ang University (Spring 2025)
+- **Research Assistant**: Russia's largest Robotarium assembly and launch at LETI University
+- **Technical Leadership**: Led 3-developer team for enterprise telecommunications project
 
-## Contact & Collaboration
+---
+
+## 🤝 Contact & Collaboration
 I'm always interested in collaborating on research projects related to reinforcement learning, autonomous systems, and AI applications. Feel free to explore my publications, teaching materials, and project portfolio using the navigation above.
 
 **Email**: timurkhairulov@cau.ac.kr  

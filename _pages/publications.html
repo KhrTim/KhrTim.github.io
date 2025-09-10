@@ -5,11 +5,15 @@ permalink: /publications/
 author_profile: true
 ---
 
+{% include base_path %}
+
+<p>My research focuses on <strong>AI and Machine Learning</strong> with applications in feature selection, computer vision, autonomous systems, and generative models. Below are my published works, organized by type, along with papers currently under review.</p>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap"><strong>📊 Academic Profiles:</strong> <a href="{{site.author.googlescholar}}">Google Scholar</a> | <strong>📧 Collaboration:</strong> <a href="mailto:timurkhairulov@cau.ac.kr">timurkhairulov@cau.ac.kr</a></div>
 {% endif %}
 
-{% include base_path %}
+<hr />
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
