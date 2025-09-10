@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**📄 [Download CV](/files/autoCV.pdf)** (PDF) | **🎯 [View Online](#education)**
+**📄 [Download CV](/files/autoCV.pdf)** (PDF) | **📄 [Academic Transcript](/files/transcript.pdf)** (PDF) | **🎯 [View Online](#education)**
 
 ---
 

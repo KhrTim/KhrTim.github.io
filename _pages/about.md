@@ -11,7 +11,7 @@ I am a Master's student in Artificial Intelligence at Chung-Ang University, Seou
 
 ---
 
-📄 **[Download My CV](/files/autoCV.pdf)** (PDF)
+📄 **[Download My CV](/files/autoCV.pdf)** (PDF) | 📄 **[Academic Transcript](/files/transcript.pdf)** (PDF)
 
 ## Current Research
 I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
