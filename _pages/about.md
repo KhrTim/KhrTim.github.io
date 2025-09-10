@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul. During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in Reinforcement Learning and Autonomous Systems, with a focus on developing efficient and reliable methods for real-world applications.
+I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, working in the [AutoML Lab](http://ml.cau.ac.kr/). During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in Reinforcement Learning and Autonomous Systems, with a focus on developing efficient and reliable methods for real-world applications.
 
 📄 **[Download My CV](/files/Academic_CV.pdf)** (PDF version)
 

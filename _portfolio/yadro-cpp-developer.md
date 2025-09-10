@@ -8,7 +8,7 @@ category: professional
 
 ## C++ Software Developer - LTE L1 Layer
 
-**YADRO** | May 2023 - February 2024
+**[YADRO](https://yadro.com/)** | May 2023 - February 2024
 
 ### Project Overview
 Worked as a C++ Software Developer specializing in LTE Layer 1 (Physical Layer) development for 4G base stations. This role involved developing critical real-time telecommunications modules that handle the lowest level of cellular communication protocols.

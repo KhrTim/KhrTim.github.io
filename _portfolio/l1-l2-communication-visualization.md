@@ -8,7 +8,7 @@ category: professional
 
 ## L1-L2 Communication Messages Visualization Application
 
-**Company:** YADRO  
+**Company:** [YADRO](https://yadro.com/)  
 **Duration:** 6 months (2023)  
 **Role:** Technical Lead & Architect  
 **Team Size:** 3 developers
