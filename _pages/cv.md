@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**📄 Download Options:** [**PDF Version**](/files/Academic_CV.pdf) | [LaTeX Source](/files/TimurKhairulov_CV.tex) | [View Online](#education)
+**📄 [Download CV](/files/autoCV.pdf)** (PDF) | **🎯 [View Online](#education)**
 
 ---
 
