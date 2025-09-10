@@ -2,6 +2,8 @@
 title: "Prim's Algorithm Visualizer"
 excerpt: "Interactive graph creation and Prim's algorithm visualization using computer graphics with C++ and SFML"
 collection: portfolio
+date: 2023-04-01
+category: personal
 ---
 
 ## Prim's Algorithm Visualizer

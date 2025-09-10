@@ -2,6 +2,8 @@
 title: "C++ Software Developer LTE L1 at YADRO"
 excerpt: "4G Base Station Development using AVX and C++ for real-time telecommunications modules"
 collection: portfolio
+date: 2024-01-01
+category: professional
 ---
 
 ## C++ Software Developer - LTE L1 Layer

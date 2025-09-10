@@ -2,6 +2,8 @@
 title: "Menu Management Application"
 excerpt: "Cross-platform CRUD application for managing cafe menu prices, deployed via Firebase Hosting"
 collection: portfolio
+date: 2023-01-01
+category: personal
 ---
 
 ## Menu Management Application

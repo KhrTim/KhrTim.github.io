@@ -2,6 +2,8 @@
 title: "BAGen: Automatic production and visualization of children songs"
 excerpt: "End-to-end generation of content for children with GUI and TUI support using Python and PyTorch"
 collection: portfolio
+date: 2025-01-01
+category: lab
 ---
 
 ## BAGen: Background Animation Generation for Children's Songs

@@ -7,8 +7,24 @@ author_profile: true
 
 {% include base_path %}
 
+<!-- Professional Experience Section -->
+<h2>Professional Experience</h2><hr />
+{% assign professional_posts = site.portfolio | where: "category", "professional" | sort: "date" | reverse %}
+{% for post in professional_posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
-{% for post in site.portfolio %}
+<!-- Lab Projects Section -->
+<h2>Lab Projects</h2><hr />
+{% assign lab_posts = site.portfolio | where: "category", "lab" | sort: "date" | reverse %}
+{% for post in lab_posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!-- Personal Projects Section -->
+<h2>Personal Projects</h2><hr />
+{% assign personal_posts = site.portfolio | where: "category", "personal" | sort: "date" | reverse %}
+{% for post in personal_posts %}
   {% include archive-single.html %}
 {% endfor %}
 

@@ -2,6 +2,8 @@
 title: "Feature Selection Experimental Code"
 excerpt: "Collection of Unsupervised Feature Selection algorithms and experiments used in recent publications"
 collection: portfolio
+date: 2025-08-01
+category: lab
 ---
 
 ## Feature Selection Research Implementation
