@@ -10,6 +10,8 @@ location: "St. Petersburg, Russia"
 
 ## Russia's Largest Robotarium Project
 
+[Link to Project Description](https://zambia.etu.ru/en/home/teachers/mechatronics-and-robotics/duckietown-robotic-system)
+
 During my bachelor's studies at Electrotechnical University "LETI", I had the unique opportunity to assist my professor in assembling and launching what became the biggest Robotarium in Russia.
 
 ### Project Overview

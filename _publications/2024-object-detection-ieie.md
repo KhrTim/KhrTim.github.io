@@ -7,7 +7,7 @@ excerpt: 'This survey reviews and classifies object detection methods for autono
 date: 2024-06-01
 venue: 'Institute of Electronics and Information Engineers (IEIE)'
 paperurl: 'https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11891143'
-citation: 'Khairulov, T. (2024). &quot;Review of current approaches in the area of object detection for autonomous vehicles.&quot; <i>Institute of Electronics and Information Engineers (IEIE)</i>.'
+citation: 'Khairulov, Timur, Sanghyuck Lee, and Jaesung Lee. "Review of current approaches in the area of object detection for autonomous vehicles." 대한전자공학회 학술대회 (2024): 2836-2839.'
 ---
 
 Accurate object detection is crucial for autonomous vehicle operation. For the past decade, object detection for autonomous driving has been significantly improved by a great number of research papers and new methods. However, developing solutions that allow vehicles to function without human intervention is an ongoing area of research. A robust algorithm should be coupled with a comprehensive sensor setup to ensure the reliability of the autonomous vehicle system.

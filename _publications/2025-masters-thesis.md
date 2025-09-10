@@ -8,11 +8,9 @@ date: 2025-12-01
 venue: 'Chung-Ang University Master Thesis'
 ---
 
-This master thesis presents a comprehensive study on unsupervised feature selection methods that maximize joint entropy while enhancing pattern discrimination capabilities. The research contributes to the field of information theory and machine learning by developing novel algorithms for automated feature selection in complex datasets.
-
-The work addresses the fundamental challenge of identifying relevant features in high-dimensional data without supervision, proposing methods that balance information preservation with computational efficiency. The thesis explores theoretical foundations of joint entropy and its application to feature selection, demonstrating improved performance over existing approaches.
+Unsupervised feature selection aims to reduce data dimensionality by eliminating redundant features while preserving the underlying structure and coherence of information in unlabeled data. While most existing methods focus on minimizing the entropy of the selected subset to promote compactness, the alternative approach of maximizing entropy remains largely underexplored. Notably, entropy maximization has shown promise in enhancing tasks such as information retrieval by promoting more balanced instance distributions compared to entropy minimization. In this study, the differences between entropy minimization and maximization are first illustrated using a toy dataset, demonstrating that maximizing joint entropy enhances the pattern discrimination ability of the selected features. To generalize this insight to real-world scenarios, a new score function is proposed that approximates joint entropy using low-order interactions, effectively addressing the challenges of high-dimensional entropy computation. Experimental results on 25 public datasets show that our method achieves superior performance in terms of pattern discrimination and clustering-related metrics.
 
 **Institution:** Chung-Ang University, Department of Artificial Intelligence  
 **Expected Completion:** 2025  
-**Advisor:** [Professor Name]  
+**Advisor:** Jeasung Lee
 **Keywords:** Unsupervised Feature Selection, Joint Entropy, Pattern Discrimination, Information Theory

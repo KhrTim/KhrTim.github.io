@@ -8,8 +8,6 @@ date: 2025-03-01
 location: "Seoul, South Korea"
 ---
 
-As a Teaching Assistant for the Computer Vision course at Chung-Ang University during Spring 2025, I:
-
 ## Responsibilities
 * Prepared comprehensive course materials including PowerPoint presentations
 * Designed and created examinations to assess student understanding

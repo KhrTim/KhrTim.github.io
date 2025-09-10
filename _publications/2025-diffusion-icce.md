@@ -7,7 +7,7 @@ excerpt: 'We present an approach that leverages natural language processing and 
 date: 2025-01-15
 venue: 'IEEE International Conference on Consumer Electronics (ICCE)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10930103'
-citation: 'Khairulov, T. (2025). &quot;Diffusion Model-Based Generative Pipeline for Children Song Video.&quot; <i>IEEE International Conference on Consumer Electronics (ICCE)</i>.'
+citation: 'Lee, Sanghyuck, Timur Khairulov, and Jaesung Lee. "Diffusion Model-Based Generative Pipeline for Children Song Video." 2025 IEEE International Conference on Consumer Electronics (ICCE). IEEE, 2025.'
 ---
 
 Children songs have been essential in early childhood education, supporting cognitive development, language acquisition, and emotional expression. With the rise of digital media, the traditional children songs have evolved into multimedia experiences, including music videos. However, the creation of these videos is a resource-intensive process that requires a blend of artistic and technical expertise. 
