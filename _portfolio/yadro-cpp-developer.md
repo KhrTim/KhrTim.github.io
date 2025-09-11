@@ -1,6 +1,6 @@
 ---
 title: "C++ Software Developer LTE L1 at YADRO"
-excerpt: "4G Base Station Development using AVX and C++ for real-time telecommunications modules"
+excerpt: "4G eNodeB Development using AVX and C++ for real-time telecommunications components"
 collection: portfolio
 date: 2024-01-01
 category: professional
@@ -11,10 +11,10 @@ category: professional
 **[YADRO](https://yadro.com/)** | May 2023 - February 2024
 
 ### Project Overview
-Worked as a C++ Software Developer specializing in LTE Layer 1 (Physical Layer) development for 4G base stations. This role involved developing critical real-time telecommunications modules that handle the lowest level of cellular communication protocols.
+Worked as a C++ Software Developer specializing in LTE Layer 1 (Physical Layer) development for 4G eNodeB. This role involved developing critical real-time telecommunications components that handle the lowest level of cellular communication protocols.
 
 ### Key Responsibilities
-* **4G Base Station Development**: Contributed to the development of LTE base station software infrastructure
+* **4G eNodeB Development**: Contributed to the development of LTE eNodeB software infrastructure
 * **Real-time Module Development**: Created and optimized high-performance modules for telecommunications processing
 * **AVX Optimization**: Utilized Advanced Vector Extensions (AVX) for enhanced computational performance in signal processing
 * **C++ Development**: Implemented robust and efficient C++ solutions for telecommunications protocols

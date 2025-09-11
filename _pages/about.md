@@ -30,7 +30,7 @@ I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entr
 
 ## Professional Experience
 **C++ Software Developer** at YADRO (2023-2024)
-- Developed LTE Layer 1 modules for 4G base stations using C++ and AVX optimization
+- Developed LTE Phy level software components for 4G eNodeB using C++ and AVX optimization
 - Specialized in real-time telecommunications and signal processing systems
 
 ## Academic Background
