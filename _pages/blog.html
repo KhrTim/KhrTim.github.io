@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Insights and explorations in AI research, machine learning experiments, and technical deep-dives.</p>
+
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}

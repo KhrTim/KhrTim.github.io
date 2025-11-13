@@ -1,71 +1,114 @@
 ---
 permalink: /
-title: "Welcome to Timur Khairulov's Academic Portfolio"
+title: "Hi, I'm Timur 👋"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, working in the [**AutoML Lab**](http://ml.cau.ac.kr/). During my graduate studies, I have worked on feature selection, missing value imputation, computer vision, time series prediction, and generative AI. For my PhD, I aim to further specialize in **Reinforcement Learning and Autonomous Systems**, with a focus on developing efficient and reliable methods for real-world applications.
+I'm a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, researching how to make machine learning more efficient and intelligent. My current work focuses on **feature selection and unsupervised learning**, but my real passion lies in **Reinforcement Learning and Autonomous Systems** - which I plan to pursue in my PhD.
+
+Before diving into AI research full-time, I spent a year as a C++ Software Developer at YADRO, optimizing LTE physical layer software for 4G networks. That experience taught me the value of efficient algorithms and real-time systems - lessons I now apply to machine learning.
 
 ---
 
-📄 **[Download My CV](/files/autoCV.pdf)** (PDF) | 📄 **[Academic Transcript](/files/transcript.pdf)** (PDF)
+## 🔬 What I'm Working On
 
-## Current Research
-I'm currently working on my Master's thesis: **"A Study on Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"**, which explores advanced methods for automated feature selection in machine learning pipelines.
+**Master's Thesis:** "Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"
+Developing automated methods to identify the most informative features in high-dimensional data without labels.
 
-## Research Interests
-- **Reinforcement Learning & Autonomous Systems (PhD focus)**: Developing algorithms for decision-making in robotics and self-driving systems.
-- **Feature Selection & Information Theory (Master’s focus)**: Unsupervised methods, entropy-based approaches, and dimensionality reduction.
-- **Data Imputation & Time Series Prediction**: Handling missing values and building predictive models for temporal data.
-- **Computer Vision & Generative AI**: Image analysis, representation learning, and generative modeling.
-- **Efficient Network Design**: Optimized architectures for real-time and resource-constrained applications.
+**Recent Project:** [Curriculum Learning for Mathematical Reasoning](/blog/2024/11/curriculum-learning-math-reasoning/)
+Investigating how training LLMs on progressively harder math problems affects their reasoning capabilities. Spoiler: curriculum design matters more than you'd think!
 
-## Recent Publications
-- **ChainImputer**: A Neural Network-Based Iterative Imputation Method Using Cumulative Features (*MDPI Symmetry*, 2025)
-- **Diffusion Model-Based Generative Pipeline** for Children Song Video (*IEEE ICCE*, 2025)
-- **Object Detection Review** for Autonomous Vehicles (*IEIE*, 2024)
+---
 
-## Professional Experience
-**C++ Software Developer** at YADRO (2023-2024)
-- Developed LTE Phy level software components for 4G eNodeB using C++ and AVX optimization
-- Specialized in real-time telecommunications and signal processing systems
+## 💡 Research Interests
 
-## Academic Background
-- **M.S. in Artificial Intelligence** - Chung-Ang University (2024-Present)
-  - CAYSS Scholarship recipient, GPA: 4.22/4.5
-- **B.S. in Computer Science** - Electrotechnical University "LETI" (2018-2023)
-  - GPA: 4.3/5, with exchange semester at Inha University
+**For PhD (Future Focus):**
+- Reinforcement Learning & Autonomous Systems
+- Decision-making algorithms for robotics and self-driving systems
+- Efficient learning in resource-constrained environments
 
-## 💻 Technical Expertise
-- **Programming Languages**: C/C++, Python, MATLAB, Dart, SQL  
-- **AI/ML Frameworks**: PyTorch, OpenCV, Scikit-learn, TensorFlow
-- **Specializations**: Deep Learning, Computer Vision, Reinforcement Learning
-- **Development Tools**: Git, Linux, Docker, Flutter, Qt, Jenkins
+**Current Focus (Master's):**
+- Unsupervised feature selection & information theory
+- Data imputation & handling missing values
+- Efficient neural network architectures
+- Computer vision & generative AI
 
-## 🏆 Notable Achievements
-- **Yandex Algorithms Bootcamp 3.0** (2023): Top 200 out of 2000 participants
+---
+
+## 📚 Recent Publications
+
+**ChainImputer: A Neural Network-Based Iterative Imputation Method Using Cumulative Features**
+*MDPI Symmetry*, 2025 | [Paper](#)
+
+**Diffusion Model-Based Generative Pipeline for Children Song Video**
+*IEEE ICCE*, 2025 | [Paper](#) | [Code](https://github.com/KhrTim/BAGen)
+
+**Object Detection Review for Autonomous Vehicles**
+*IEIE*, 2024 | [Paper](#)
+
+---
+
+## 🎓 Background
+
+**M.S. in Artificial Intelligence** - Chung-Ang University (2024-Present)
+CAYSS Scholarship recipient | GPA: 4.22/4.5
+[AutoML Lab](http://ml.cau.ac.kr/)
+
+**B.S. in Computer Science** - Electrotechnical University "LETI" (2018-2023)
+GPA: 4.3/5.0 | Exchange semester at Inha University
+Helped launch Russia's largest Robotarium
+
+**C++ Software Developer** - YADRO (2023-2024)
+Optimized LTE physical layer software using AVX instructions
+Specialized in real-time telecommunications systems
+
+---
+
+## 💻 Technical Stack
+
+**Languages:** Python, C/C++, MATLAB, Dart, SQL
+**AI/ML:** PyTorch, TensorFlow, Scikit-learn, OpenCV, Hugging Face Transformers
+**Tools:** Git, Linux, Docker, W&B, Flutter, Qt
+**Specializations:** Deep Learning, Computer Vision, Reinforcement Learning, Feature Engineering
+
+---
+
+## 🏆 Highlights
+
+- **Yandex Algorithms Bootcamp 3.0** (2023): Top 200/2000 participants
 - **CAYSS Scholarship** at Chung-Ang University (2024-Present)
-- **Robotarium Project**: Helped assemble Russia's largest robotarium at LETI University
+- **Led 3-developer team** on enterprise telecom project at YADRO
+- **Teaching Assistant** for Computer Vision course (Spring 2025)
+
+---
 
 ## 🚀 Featured Projects
-- **[BAGen](https://github.com/KhrTim/BAGen)**: AI-powered system for automatic children's song video generation using PyTorch
-- **[Feature Selection Algorithms](https://github.com/KhrTim/Feature_Selection)**: Research implementations supporting multiple publications  
-- **[L1-L2 Communication Visualization](#)**: Enterprise application for telecom analysis (YADRO project)
-- **[Menu Management App](https://product-list-cv.web.app/#/)**: Live cross-platform Flutter/Firebase application
 
-## 🎓 Teaching & Mentoring
-- **Teaching Assistant**: Computer Vision course, Chung-Ang University (Spring 2025)
-- **Research Assistant**: Russia's largest Robotarium assembly and launch at LETI University
-- **Technical Leadership**: Led 3-developer team for enterprise telecommunications project
+[**BAGen**](https://github.com/KhrTim/BAGen) - AI-powered children's song video generator using diffusion models and PyTorch
+
+[**Feature Selection Library**](https://github.com/KhrTim/Feature_Selection) - Research implementations supporting multiple publications
+
+[**Menu Management App**](https://product-list-cv.web.app/#/) - Production Flutter/Firebase application with real-time sync
+
+**L1-L2 Communication Visualizer** - Enterprise telecommunications analysis tool (YADRO proprietary)
 
 ---
 
-## 🤝 Contact & Collaboration
-I'm always interested in collaborating on research projects related to reinforcement learning, autonomous systems, and AI applications. Feel free to explore my publications, teaching materials, and project portfolio using the navigation above.
+## 📫 Let's Connect
 
-**Email**: timurkhairulov@cau.ac.kr  
-**GitHub**: [KhrTim](https://github.com/KhrTim)  
-**Google Scholar**: [Publications](https://scholar.google.com/citations?user=-XrW5PAAAAAJ)
+I'm always interested in collaborating on research related to:
+- Reinforcement learning and autonomous systems
+- Efficient machine learning methods
+- Real-world AI applications
+
+**Email:** timurkhairulov@cau.ac.kr
+**GitHub:** [KhrTim](https://github.com/KhrTim)
+**LinkedIn:** [timur-khairulov](https://linkedin.com/in/timur-khairulov-b09791250)
+**Google Scholar:** [Publications](https://scholar.google.com/citations?user=-XrW5PAAAAAJ)
+
+---
+
+📄 **[Download My CV](/files/autoCV.pdf)** | 📄 **[Academic Transcript](/files/transcript.pdf)**
