@@ -1,7 +1,7 @@
 ---
 title: 'Curriculum Learning for Mathematical Reasoning: Why Design Matters More Than You Think'
-date: 2024-11-13
-permalink: /blog/2024/11/curriculum-learning-math-reasoning/
+date: 2025-11-13
+permalink: /blog/2025/11/curriculum-learning-math-reasoning/
 tags:
   - curriculum-learning
   - large-language-models

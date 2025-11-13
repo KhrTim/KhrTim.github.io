@@ -18,7 +18,7 @@ Before diving into AI research full-time, I spent a year as a C++ Software Devel
 **Master's Thesis:** "Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"
 Developing automated methods to identify the most informative features in high-dimensional data without labels.
 
-**Recent Project:** [Curriculum Learning for Mathematical Reasoning](/blog/2024/11/curriculum-learning-math-reasoning/)
+**Recent Project:** [Curriculum Learning for Mathematical Reasoning](/blog/2025/11/curriculum-learning-math-reasoning/)
 Investigating how training LLMs on progressively harder math problems affects their reasoning capabilities. Spoiler: curriculum design matters more than you'd think!
 
 ---

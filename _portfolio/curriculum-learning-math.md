@@ -2,7 +2,7 @@
 title: "Curriculum Learning for Mathematical Reasoning"
 excerpt: "Investigating how progressive training on math problems affects LLM reasoning capabilities. Found that proper curriculum design can improve performance by 2.34%, but wrong curricula can hurt by 0.78%."
 collection: portfolio
-date: 2024-11-13
+date: 2025-11-13
 ---
 
 ## Project Overview
@@ -43,7 +43,7 @@ This research project explores curriculum learning for training large language m
 
 ## Resources
 
-- 📝 [Full Blog Post](/blog/2024/11/curriculum-learning-math-reasoning/) - Detailed analysis and visualizations
+- 📝 [Full Blog Post](/blog/2025/11/curriculum-learning-math-reasoning/) - Detailed analysis and visualizations
 - 💻 [GitHub Repository](https://github.com/KhrTim) - Code and experiments
 - 📊 8 publication-quality visualizations showing results
 
