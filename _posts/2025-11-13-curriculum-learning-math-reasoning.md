@@ -1,5 +1,5 @@
 ---
-title: 'Curriculum Learning for Mathematical Reasoning: Why Design Matters More Than You Think'
+title: "Curriculum Learning for Mathematical Reasoning: Why Design Matters More Than You Think"
 date: 2025-11-13
 permalink: /blog/2025/11/curriculum-learning-math-reasoning/
 tags:
@@ -8,7 +8,7 @@ tags:
   - mathematical-reasoning
   - deep-learning
   - gsm8k
-excerpt: 'I trained two language models on math problems using curriculum learning with different difficulty estimation methods. The surprising finding? The wrong curriculum can actually hurt performance. Here's what I learned about training LLMs for mathematical reasoning.'
+excerpt: "I trained two language models on math problems using curriculum learning with different difficulty estimation methods. The surprising finding? The wrong curriculum can actually hurt performance. Here's what I learned about training LLMs for mathematical reasoning."
 ---
 
 ## TL;DR
