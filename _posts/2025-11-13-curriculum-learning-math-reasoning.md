@@ -11,6 +11,20 @@ tags:
 excerpt: "I trained two language models on math problems using curriculum learning with different difficulty estimation methods. The surprising finding? The wrong curriculum can actually hurt performance. Here's what I learned about training LLMs for mathematical reasoning."
 ---
 
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+<script src="/assets/js/curriculum-learning-plots.js"></script>
+<style>
+.plot-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1em;
+  background: white;
+}
+</style>
+
 ## TL;DR
 
 I trained two language models (PHI-2 and SmolLM2) on GSM8K math problems using curriculum learning with two different difficulty estimation methods. **Key finding:** The complexity-based curriculum improved PHI-2 by 2.34% over baseline, while a naive answer-length curriculum actually hurt performance (-0.78%). Small models (135M params) showed minimal improvement, suggesting curriculum learning is most effective for medium-sized models.
@@ -77,7 +91,9 @@ where:
 
 ### Main Finding: Curriculum Design Matters More Than You Think
 
-<img src="/images/blog/curriculum-learning/4_performance_heatmap.png" alt="Performance Heatmap" style="width:100%; max-width:800px;">
+<div class="plot-container">
+  <div id="plot-performance-heatmap" style="width:100%; height:500px;"></div>
+</div>
 
 The results tell a nuanced story:
 
@@ -101,13 +117,19 @@ The results tell a nuanced story:
 
 **Key Insight:** Very small models struggle with mathematical reasoning regardless of curriculum (2-3% accuracy). However, curriculum learning still provides modest improvements.
 
+<div class="plot-container">
+  <div id="plot-baseline-comparison" style="width:100%; height:500px;"></div>
+</div>
+
 ---
 
 ## Deep Dive: What Makes a Good Curriculum?
 
 ### Stage-by-Stage Progression
 
-<img src="/images/blog/curriculum-learning/2_curriculum_progression.png" alt="Curriculum Progression" style="width:100%; max-width:800px;">
+<div class="plot-container">
+  <div id="plot-curriculum-progression" style="width:100%; height:500px;"></div>
+</div>
 
 #### PHI-2 with Answer Length Method
 - **Easy stage:** 50.59% (dropped from 60.16% baseline!)
@@ -152,7 +174,9 @@ This aligns with how humans perceive math difficulty.
 
 ## Model Size Matters
 
-<img src="/images/blog/curriculum-learning/5_improvement_over_baseline.png" alt="Improvement Over Baseline" style="width:100%; max-width:800px;">
+<div class="plot-container">
+  <div id="plot-improvement-over-baseline" style="width:100%; height:500px;"></div>
+</div>
 
 ### PHI-2 (2.7B): The Sweet Spot
 - Has enough capacity to benefit from curriculum
@@ -172,7 +196,9 @@ This aligns with how humans perceive math difficulty.
 
 ### Metrics Comparison
 
-<img src="/images/blog/curriculum-learning/6_metrics_comparison.png" alt="Metrics Comparison" style="width:100%; max-width:800px;">
+<div class="plot-container">
+  <div id="plot-method-comparison" style="width:100%; height:500px;"></div>
+</div>
 
 I tracked three metrics:
 
