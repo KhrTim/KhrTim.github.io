@@ -299,6 +299,8 @@ This ensures stage 2 doesn't overwrite stage 1's logs!
 
 ## Reproducibility
 
+📓 **[Download Jupyter Notebook](/files/curriculum_learning_blog_post.ipynb)** - Interactive version with executable code and visualizations
+
 All code and experiments are available in my [GitHub repository](https://github.com/KhrTim). Key components:
 
 ```bash

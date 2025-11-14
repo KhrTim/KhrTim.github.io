@@ -44,8 +44,9 @@ This research project explores curriculum learning for training large language m
 ## Resources
 
 - 📝 [Full Blog Post](/blog/2025/11/curriculum-learning-math-reasoning/) - Detailed analysis and visualizations
+- 📓 [Jupyter Notebook](/files/curriculum_learning_blog_post.ipynb) - Interactive analysis with executable code
 - 💻 [GitHub Repository](https://github.com/KhrTim) - Code and experiments
-- 📊 8 publication-quality visualizations showing results
+- 📊 Interactive Plotly visualizations and results
 
 ## Impact
 
