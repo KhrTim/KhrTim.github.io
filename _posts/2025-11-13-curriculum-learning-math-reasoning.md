@@ -48,7 +48,7 @@ As will be evident from experimental results in the following sections, composit
 
 One of the first ideas that came up was to split the dataset based on the answer length, as it seems intuitive that the logner the qustion the more difficult it is. After creating a histogram of quesntion lenghts in the dataset, it looked like a normal distibution, so I decieded to split dataset lengths into percentiles where the 50% of samples belong to 'normal' difficulty and 25% for 'easy' and 'difficult'.
 
-![Answer Length Distribution](images/blog/Answer_Length_distribution.png "Answer Length Distribution")
+![Answer Length Distribution](/images/blog/curriculum-learning/Answer_Length_distribution.png "Answer Length Distribution")
 ```plotly
 {
   "data": [
@@ -160,7 +160,7 @@ After calculating the score of each sample, all samples were equally splitted in
 Samples difficulties range from 3 to 137, where lower score represents easier task.
 Distribution of samples difficulties is presented in the follwoing figure:
 
-![Complexity Score Distribution](../images/blog/Complexity_Score_distribution.png "Complexity Score Distribution")
+![Complexity Score Distribution](/images/blog/curriculum-learning/Complexity_Score_distribution.png "Complexity Score Distribution")
 ```plotly
 {
   "data": [
@@ -332,7 +332,7 @@ For evaluation, we used comparison of model's prediction with the actual answer.
 Baseline results are based on the regular fine-tuning of models on the whole dataset.
 PHI2 demonstrated 30.27% answer accuracy and 97.07% formatting accuracy, whereas smolLM2 2.54% answer accuracy and 72.46% formatting accuracy
 
-![Baseline Fine-Tuning Results](../images/blog/Answer_Length.png "Baseline Fine-Tuning Results")
+![Baseline Fine-Tuning Results](/images/blog/curriculum-learning/Baseline.png "Baseline Fine-Tuning Results")
 
 ```plotly
 {
@@ -397,7 +397,7 @@ PHI2: 29.49 (-0.78%) - answer accuracy, 85.94 (-11.13%) - formatting accuracy
 smolLM2: 0.98 (-1.56%) - answer accuracy, 68.36 (-4.10%) - formatting accuracy
 PHI2: 29.88 (-0.39%) - answer accuracy, 91.6 (-5.47%) - formatting accuracy
 
-![Answer Length Training Results](../images/blog/Answer_Length.png "Answer Length Training Results")
+![Answer Length Training Results](/images/blog/curriculum-learning/Answer_Length.png "Answer Length Training Results")
 
 ```plotly
 {
@@ -459,7 +459,7 @@ PHI2: 28.91 (-1.36%) - answer accuracy, 97.66 (+0.59%) - formatting accuracy
 smolLM2: 1.56 (-0.98%) - answer accuracy, 65.63 (-6.83%) - formatting accuracy;
 PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 
-![Complexity Score Training Results](../images/blog/Complexity_Score.png "Complexity Score Training Results")
+![Complexity Score Training Results](/images/blog/curriculum-learning/Complexity_Score.png "Complexity Score Training Results")
 
 ```plotly
 {
@@ -576,7 +576,7 @@ PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 }
 ```
 
-![Answer Length Training Progression](../images/blog/Answer_Length_iterative.png "Answer Length Training Progression")
+![Answer Length Training Progression](/images/blog/curriculum-learning/Answer_Length_iterative.png "Answer Length Training Progression")
 ```plotly
 {
   "data": [
@@ -769,7 +769,7 @@ PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 ```
 
 
-![Complexity Score Training Progression](../images/blog/Complexity_Score_iterative.png "Complexity Score Training Progression")
+![Complexity Score Training Progression](/images/blog/curriculum-learning/Complexity_Score_iterative.png "Complexity Score Training Progression")
 
 ```plotly
 {
