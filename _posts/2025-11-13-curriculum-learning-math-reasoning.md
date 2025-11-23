@@ -65,7 +65,7 @@ Eventually I came up with this formula for the question difficulty estimation:
 
 $$
 \displaylines{
-Sample_Complexity_Score = L_a + (OP_q * N_q)
+Sample\_Complexity\_Score = L_a + (OP_q * N_q)
 }
 $$
 
@@ -129,17 +129,21 @@ Models were fine-tuned with Huggingface SFTTrainer with the following settings:
 
 ```python
 training_args = SFTConfig(
-        per_device_train_batch_size=16,
+        completion_only_loss=False,
+        dataloader_persistent_workers=True,
+        dataloader_num_workers=16,
         gradient_accumulation_steps=4,
         learning_rate=3e-4,
-        num_train_epochs=2,
-        fp16=True,
-        max_length=512,
-        packing=False,
-        dataset_text_field="text",
+        logging_steps=10,
+        logging_first_step=True,
         load_best_model_at_end=False,
-        gradient_checkpointing=True,
-        gradient_checkpointing_kwargs={"use_reentrant": False}
+        num_train_epochs=2,
+        per_device_train_batch_size=32,
+        packing=False,
+        report_to="wandb",
+        save_strategy="epoch",
+        fp16=True,
+        warmup_steps=2,
     )
 ```
 
@@ -152,9 +156,12 @@ lora_config = LoraConfig(
         lora_dropout=0.1,
         bias="none",
         task_type="CAUSAL_LM",
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"]
     )
 ```
+
+`target_modules` are architecture-dependant:
+- PHI2: `target_modules=["Wqkv", "fc1", "fc2"]`
+- smolLm2: `target_modules=["q_proj", "k_proj", "v_proj", "o_proj"]`
 
 
 ## Models selection
