@@ -28,9 +28,9 @@ Current project is built on the same principle: split math tasks by difficulty a
 
 # Dataset
 
-I was interested to know how well can LLMs solve maths tasks, so gsm8k was chosen as a dataset because it's popular, contains enough samples and good answers. Also, it doens't contain very complex operations, but rather tests the resononing ability of models.
+I was interested to know how well can LLMs solve maths tasks, so gsm8k was chosen as a dataset because it's popular, contains enough samples and good answers. Also, it doens't contain very complex operations, but rather tests the reasononing ability of models.
 
-Gsm8k has 2 variations: main and socratic with loger reasoning and socratic-style questions. Each of variations contains 7473 train samples and 1319 test samples. For my experiments main version was chosen as the importance of socratic-style questions in resoning chain is a subject to investigate in the future. For now, I wanted a more simple setup.
+Gsm8k has 2 variations: main and socratic with longer reasoning and socratic-style questions. Each of variations contains 7473 train samples and 1319 test samples. For my experiments main version was chosen as the importance of socratic-style questions in reasoning chain is a subject to investigate in the future. For now, I wanted a more simple setup.
 
 Example of train sample from main variant of gsm8k dataset
 ```python
@@ -46,7 +46,7 @@ As will be evident from experimental results in the following sections, composit
 
 ## 1. Naive approach - Answer Length
 
-One of the first ideas that came up was to split the dataset based on the answer length, as it seems intuitive that the logner the qustion the more difficult it is. After creating a histogram of quesntion lenghts in the dataset, it looked like a normal distibution, so I decieded to split dataset lengths into percentiles where the 50% of samples belong to 'normal' difficulty and 25% for 'easy' and 'difficult'.
+One of the first ideas that came up was to split the dataset based on the answer length, as it seems intuitive that the logner the qustion the more difficult it is. After creating a histogram of question lenghts in the dataset, it looked like a normal distibution, so I decieded to split dataset lengths into percentiles where the 50% of samples belong to 'normal' difficulty and 25% for 'easy' and 'difficult'.
 
 ![Answer Length Distribution](/images/blog/curriculum-learning/Answer_Length_distribution.png "Answer Length Distribution")
 
@@ -60,7 +60,7 @@ difficult: 3248 samples
 
 ## 2. Composed approach - Complexity Score
 
-For the more advanced option, I decided to use some kind of a composition of several scores. More specifically, to me it seemed resonable to use length of the answer \\(L_a\\), difficulty of mathematical operations in question \\(OP_q\\), and amount of numbers in question \\(N_q\\).
+For the more advanced option, I decided to use some kind of a composition of several scores. More specifically, to me it seemed reasonable to use length of the answer \\(L_a\\), difficulty of mathematical operations in question \\(OP_q\\), and amount of numbers in question \\(N_q\\).
 Eventually I came up with this formula for the question difficulty estimation:
 
 $$
