@@ -140,7 +140,9 @@ The code for this benchmark and analysis tools are open-source. I encourage you 
 code: 
 ---
 
-## Supplemetary materials - All experimnetal data
+## Supplementary materials - All experimental data
+
+
 |model                    |quantization|load_time_s       |model_size_mb    |model_parameters|avg_latency_s      |mean_answer_length|meteor              |sacrebleu             |rouge1              |rouge2               |rougeL              |bertscore_precision|bertscore_recall  |bertscore_f1      |perplexity        |
 |-------------------------|------------|------------------|-----------------|----------------|-------------------|------------------|--------------------|----------------------|--------------------|---------------------|--------------------|-------------------|------------------|------------------|------------------|
 |blip2                    |fp16        |7.602144718170166 |7142.56640625    |3744761856      |0.1320900297164917 |28.04             |0.018088865409510595|1.4987195485025522e-16|0.045506439517707595|0.0053422581744783995|0.038009202381693044|0.8314800691604615 |0.7689636087417603|0.7985913348197937|1722.0730457305908|
