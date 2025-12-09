@@ -1,5 +1,5 @@
 ---
-title: Optimizing Vision-Language Models for Production: A Deep Dive into Quantization and Pruning.
+title: "Optimizing Vision-Language Models for Production: A Deep Dive into Quantization and Pruning"
 date: 2025-12-09
 permalink: /blog/2025/12/vqa-optimization/
 tags:
