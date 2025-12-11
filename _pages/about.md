@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, researching how to make machine learning more efficient and intelligent. My current work focuses on **feature selection and unsupervised learning**, but my real passion lies in **Reinforcement Learning and Autonomous Systems** - which I plan to pursue in my PhD.
+I'm a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, researching how to make machine learning more efficient and intelligent. My current work focuses on **feature selection and unsupervised learning**, and I am deeply interested in **Large Language Models and their Optimization**.
 
 Before diving into AI research full-time, I spent a year as a C++ Software Developer at YADRO, optimizing LTE physical layer software for 4G networks. That experience taught me the value of efficient algorithms and real-time systems - lessons I now apply to machine learning.
 
@@ -25,12 +25,12 @@ Investigating how training LLMs on progressively harder math problems affects th
 
 ## 💡 Research Interests
 
-**For PhD (Future Focus):**
-- Reinforcement Learning & Autonomous Systems
-- Decision-making algorithms for robotics and self-driving systems
+**Current Focus:**
+- Large Language Models (LLMs) & Optimization
 - Efficient learning in resource-constrained environments
+- Decision-making algorithms
 
-**Current Focus (Master's):**
+**Research Interests:**
 - Unsupervised feature selection & information theory
 - Data imputation & handling missing values
 - Efficient neural network architectures
@@ -72,7 +72,7 @@ Specialized in real-time telecommunications systems
 **Languages:** Python, C/C++, MATLAB, Dart, SQL
 **AI/ML:** PyTorch, TensorFlow, Scikit-learn, OpenCV, Hugging Face Transformers
 **Tools:** Git, Linux, Docker, W&B, Flutter, Qt
-**Specializations:** Deep Learning, Computer Vision, Reinforcement Learning, Feature Engineering
+**Specializations:** Deep Learning, LLM Optimization, Feature Engineering, Computer Vision
 
 ---
 
@@ -100,7 +100,7 @@ Specialized in real-time telecommunications systems
 ## 📫 Let's Connect
 
 I'm always interested in collaborating on research related to:
-- Reinforcement learning and autonomous systems
+- LLM optimization and efficiency
 - Efficient machine learning methods
 - Real-world AI applications
 
