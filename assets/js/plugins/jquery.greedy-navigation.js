@@ -5,6 +5,8 @@
 *
 */
 
+$(document).ready(function() {
+
 var $nav = $('#site-nav');
 var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
@@ -84,3 +86,5 @@ $btn.on('click', function () {
 });
 
 updateNav();
+
+});
