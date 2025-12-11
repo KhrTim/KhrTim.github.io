@@ -18,8 +18,8 @@ Before diving into AI research full-time, I spent a year as a C++ Software Devel
 **Master's Thesis:** "Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"
 Developing automated methods to identify the most informative features in high-dimensional data without labels.
 
-**Recent Project:** [Curriculum Learning for Mathematical Reasoning](/blog/2025/11/curriculum-learning-math-reasoning/)
-Investigating how training LLMs on progressively harder math problems affects their reasoning capabilities. Spoiler: curriculum design matters more than you'd think!
+**Recent Project:** [Optimizing Vision-Language Models for Production](/blog/2025/12/vqa-optimization/)
+Benchmarking LLaVA, Qwen-VL, and PaliGemma to find the sweet spot between performance and efficiency using quantization and pruning. Spoiler: 4-bit quantization is a game changer!
 
 ---
 
@@ -87,7 +87,8 @@ Specialized in real-time telecommunications systems
 
 ## 🚀 Featured Projects
 
-[**BAGen**](https://github.com/KhrTim/BAGen) - AI-powered children's song video generator using diffusion models and PyTorch
+[**VLM Optimization**](/blog/2025/12/vqa-optimization/) - Comprehensive benchmark of quantization and pruning strategies for Vision-Language Models.
+
 
 [**Feature Selection Library**](https://github.com/KhrTim/Feature_Selection) - Research implementations supporting multiple publications
 
