@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**📄 [Download CV](/files/autoCV.pdf)** (PDF) | **📄 [Academic Transcript](/files/transcript.pdf)** (PDF) | **🎯 [View Online](#education)**
+**📄 [Download CV](/files/Timur_Khairulov_CV.pdf)** (PDF) | **📄 [Academic Transcript](/files/transcript.pdf)** (PDF)
 
 ---
 
@@ -30,10 +30,10 @@ Education
 
 Research Interests
 ======
-* **Reinforcement Learning**: Advanced algorithms and applications
-* **Autonomous Systems**: Self-driving vehicles and robotics
+* **Large Language Models (LLMs)**: Optimization, compression, and efficiency
+* **Vision-Language Models (VLMs)**: Model compression and efficient deployment
 * **Feature Selection and Information Theory**: Unsupervised methods and entropy optimization
-* **Efficient Network Design**: Optimized architectures for real-time applications
+* **Efficient Neural Networks**: Quantization, pruning, and optimized architectures for resource-constrained environments
 
 Work Experience
 ======

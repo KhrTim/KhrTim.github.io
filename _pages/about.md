@@ -41,13 +41,13 @@ Benchmarking LLaVA, Qwen-VL, and PaliGemma to find the sweet spot between perfor
 ## 📚 Recent Publications
 
 **ChainImputer: A Neural Network-Based Iterative Imputation Method Using Cumulative Features**
-*MDPI Symmetry*, 2025 | [Paper](#)
+*MDPI Symmetry*, 2025 | [Paper](https://www.mdpi.com/2073-8994/17/6/869)
 
 **Diffusion Model-Based Generative Pipeline for Children Song Video**
-*IEEE ICCE*, 2025 | [Paper](#) | [Code](https://github.com/KhrTim/BAGen)
+*IEEE ICCE*, 2025 | [Paper](https://ieeexplore.ieee.org/abstract/document/10930103) | [Code](https://github.com/KhrTim/BAGen)
 
 **Object Detection Review for Autonomous Vehicles**
-*IEIE*, 2024 | [Paper](#)
+*IEIE*, 2024 | [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11891143)
 
 ---
 
@@ -112,4 +112,4 @@ I'm always interested in collaborating on research related to:
 
 ---
 
-📄 **[Download My CV](/files/autoCV.pdf)** | 📄 **[Academic Transcript](/files/transcript.pdf)**
+📄 **[Download My CV](/files/Timur_Khairulov_CV.pdf)** | 📄 **[Academic Transcript](/files/transcript.pdf)**

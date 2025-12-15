@@ -18,6 +18,20 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
+<!-- ML Research Projects Section -->
+<h2>ML Research Projects</h2><hr />
+{% assign ml_research_posts = site.portfolio | where: "category", "ml-research" | sort: "date" | reverse %}
+{% for post in ml_research_posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!-- ML Engineering Projects Section -->
+<h2>ML Engineering Projects</h2><hr />
+{% assign ml_engineering_posts = site.portfolio | where: "category", "ml-engineering" | sort: "date" | reverse %}
+{% for post in ml_engineering_posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
 <!-- Lab Projects Section -->
 <h2>Lab Projects</h2><hr />
 {% assign lab_posts = site.portfolio | where: "category", "lab" | sort: "date" | reverse %}
