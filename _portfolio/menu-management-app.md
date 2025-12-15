@@ -4,6 +4,7 @@ excerpt: "Cross-platform CRUD application for managing cafe menu prices, deploye
 collection: portfolio
 date: 2023-01-01
 category: personal
+published: false
 ---
 
 ## Menu Management Application
