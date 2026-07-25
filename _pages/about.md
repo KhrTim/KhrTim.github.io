@@ -1,115 +1,128 @@
 ---
+layout: home
 permalink: /
-title: "Hi, I'm Timur 👋"
-author_profile: true
+title: "Timur Khairulov — AI Researcher"
+description: "M.S. researcher in AI at Chung-Ang University working on LLM/VLM compression and efficient machine learning."
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm a Master's student in Artificial Intelligence at Chung-Ang University, Seoul, researching how to make machine learning more efficient and intelligent. My current work focuses on **feature selection and unsupervised learning**, and I am deeply interested in **Large Language Models and their Optimization**.
+<section class="hero">
+  <div class="grid-spot" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="prompt"><span class="greet">Привет</span> · timur@research ~ %<span class="caret"></span></div>
+      <h1>Timur Khairulov</h1>
+      <div class="native">// Тимур Хайрулов · St. Petersburg → Seoul</div>
+      <div class="lines">
+        <div><span class="k">&gt;</span> <span data-type="building efficient AI"></span></div>
+        <div><span class="k">&gt;</span> <span data-type="model compression · unsupervised feature selection"></span></div>
+      </div>
+      <p class="intro">
+        M.S. researcher at <strong>Chung-Ang University</strong>, Seoul. I make machine learning
+        smaller, faster, and cheaper to run — <strong>compressing large vision-language models</strong>
+        for real deployment. Before AI, I shipped real-time 4G LTE physical-layer software in C++ at YADRO.
+      </p>
+      <div class="cta">
+        <a class="btn-x primary" href="/files/Timur_Khairulov_CV.pdf">View CV <span class="arw">↗</span></a>
+        <a class="btn-x" href="/publications/">Publications</a>
+        <a class="btn-x" href="https://github.com/KhrTim" target="_blank" rel="noopener">GitHub <span class="arw">↗</span></a>
+        <a class="btn-x" href="mailto:timurkhairulov@cau.ac.kr">Email</a>
+      </div>
+    </div>
 
-Before diving into AI research full-time, I spent a year as a C++ Software Developer at YADRO, optimizing LTE physical layer software for 4G networks. That experience taught me the value of efficient algorithms and real-time systems - lessons I now apply to machine learning.
+    <div class="term reveal">
+      <div class="term-bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>~/research — optimize.sh</span></div>
+      <div class="term-body" id="term-body">
+<div class="ln c-cmd">optimize --model llava-7b</div>
+<div class="ln c-dim">  loading weights ........... <span class="c-am">14.2 GB</span></div>
+<div class="ln c-dim">  quantize 4-bit <span class="bar">▓▓▓▓▓▓▓▓</span> <span class="c-ok">ok</span></div>
+<div class="ln c-dim">  prune attention heads ..... <span class="c-ok">ok</span></div>
+<div class="ln c-dim">  ────────────────────────────</div>
+<div class="ln c-dim">  output .................... <span class="c-cy">7.1 GB</span></div>
+<div class="ln c-cy">  size −50%  ·  accuracy −1.8%</div>
+<div class="ln c-ok">  ✓ shipped to production</div>
+      </div>
+    </div>
+  </div>
+</section>
 
----
+<div class="stats reveal">
+  <div class="cell"><div class="num">~<span data-count="50" data-dec="0">50</span><span class="u">%</span></div><div class="lbl">smaller VLMs, &lt;2% accuracy loss</div></div>
+  <div class="cell"><div class="num"><span data-count="5">5</span></div><div class="lbl">peer-reviewed publications</div></div>
+  <div class="cell"><div class="num"><span data-count="4.22" data-dec="1">4.22</span><span class="u">/4.5</span></div><div class="lbl">M.S. GPA · CAYSS scholar</div></div>
+  <div class="cell"><div class="num"><span data-count="200">200</span></div><div class="lbl">Yandex Bootcamp, top 200 / 2000</div></div>
+</div>
 
-## 🔬 What I'm Working On
+<section class="blk">
+  <div class="wrap reveal">
+    <h2 class="sec-h">selected_work</h2>
+    <p class="sec-sub">Research and engineering I'm most proud of.</p>
+    <div class="cards">
+      <a class="card" href="/portfolio/vlm-optimization/">
+        <div class="idx">01 / vision-language</div>
+        <h3>VLM Compression</h3>
+        <p>Quantization and structural pruning for BLIP-2 and LLaVA — roughly half the size with under 2% accuracy loss.</p>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Quantization</span><span class="tag">Pruning</span></div>
+      </a>
+      <a class="card" href="https://www.mdpi.com/2073-8994/17/6/869" target="_blank" rel="noopener">
+        <div class="idx">02 / journal</div>
+        <h3>ChainImputer</h3>
+        <p>Neural-network iterative imputation using cumulative features for missing data. Published in MDPI Symmetry, 2025.</p>
+        <div class="tags"><span class="tag">MDPI 2025</span><span class="tag">Imputation</span><span class="tag">Deep Learning</span></div>
+      </a>
+      <a class="card" href="https://github.com/KhrTim/Feature_Selection" target="_blank" rel="noopener">
+        <div class="idx">03 / research code</div>
+        <h3>Feature Selection Library</h3>
+        <p>Unsupervised feature-selection algorithms and experiments behind several publications and my thesis.</p>
+        <div class="tags"><span class="tag">Info Theory</span><span class="tag">scikit-learn</span><span class="tag">Research</span></div>
+      </a>
+    </div>
+  </div>
+</section>
 
-**Master's Thesis:** "Maximizing Joint Entropy and Pattern Discrimination for Unsupervised Feature Selection"
-Developing automated methods to identify the most informative features in high-dimensional data without labels.
+<section class="blk" style="padding-top:0">
+  <div class="wrap reveal">
+    <h2 class="sec-h">the_path</h2>
+    <p class="sec-sub">Russia to Korea, telecom to AI.</p>
+    <div class="journey">
+      <div class="stop"><span class="flag">🇷🇺</span><div class="yr">2018 — 2023</div><div class="place">LETI · St. Petersburg</div><div class="role">B.S. Computer Science</div></div>
+      <div class="stop"><span class="flag">🇰🇷</span><div class="yr">2022 — 2023</div><div class="place">Inha · Incheon</div><div class="role">Exchange semester</div></div>
+      <div class="stop"><span class="flag">🇷🇺</span><div class="yr">2023 — 2024</div><div class="place">YADRO</div><div class="role">C++ LTE L1 engineer</div></div>
+      <div class="stop"><span class="flag">🇰🇷</span><div class="yr">2024 — now</div><div class="place">Chung-Ang · Seoul</div><div class="role">M.S. AI · AutoML Lab</div></div>
+    </div>
+  </div>
+</section>
 
-**Recent Project:** [Optimizing Vision-Language Models for Production](/blog/2025/12/vqa-optimization/)
-Benchmarking LLaVA, Qwen-VL, and PaliGemma to find the sweet spot between performance and efficiency using quantization and pruning. Spoiler: 4-bit quantization is a game changer!
+<section class="blk" style="padding-top:0">
+  <div class="wrap reveal">
+    <h2 class="sec-h">research_interests</h2>
+    <p class="sec-sub">Where I spend my time.</p>
+    <div class="chips">
+      <span class="chip">LLM &amp; VLM compression</span>
+      <span class="chip">Quantization &amp; pruning</span>
+      <span class="chip">Unsupervised feature selection</span>
+      <span class="chip">Information theory</span>
+      <span class="chip">Efficient inference</span>
+      <span class="chip">Data imputation</span>
+    </div>
+  </div>
+</section>
 
----
-
-## 💡 Research Interests
-
-**Current Focus:**
-- Large Language Models (LLMs) & Optimization
-- Efficient learning in resource-constrained environments
-- Decision-making algorithms
-
-**Research Interests:**
-- Unsupervised feature selection & information theory
-- Data imputation & handling missing values
-- Efficient neural network architectures
-- Computer vision & generative AI
-
----
-
-## 📚 Recent Publications
-
-**ChainImputer: A Neural Network-Based Iterative Imputation Method Using Cumulative Features**
-*MDPI Symmetry*, 2025 | [Paper](https://www.mdpi.com/2073-8994/17/6/869)
-
-**Diffusion Model-Based Generative Pipeline for Children Song Video**
-*IEEE ICCE*, 2025 | [Paper](https://ieeexplore.ieee.org/abstract/document/10930103) | [Code](https://github.com/KhrTim/BAGen)
-
-**Object Detection Review for Autonomous Vehicles**
-*IEIE*, 2024 | [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11891143)
-
----
-
-## 🎓 Background
-
-**M.S. in Artificial Intelligence** - Chung-Ang University (2024-Present)
-CAYSS Scholarship recipient | GPA: 4.22/4.5
-[AutoML Lab](http://ml.cau.ac.kr/)
-
-**B.S. in Computer Science** - Electrotechnical University "LETI" (2018-2023)
-GPA: 4.3/5.0 | Exchange semester at Inha University
-Helped launch Russia's largest Robotarium
-
-**C++ Software Developer** - YADRO (2023-2024)
-Optimized LTE physical layer software using AVX instructions
-Specialized in real-time telecommunications systems
-
----
-
-## 💻 Technical Stack
-
-**Languages:** Python, C/C++, MATLAB, Dart, SQL
-**AI/ML:** PyTorch, TensorFlow, Scikit-learn, OpenCV, Hugging Face Transformers
-**Tools:** Git, Linux, Docker, W&B, Flutter, Qt
-**Specializations:** Deep Learning, LLM Optimization, Feature Engineering, Computer Vision
-
----
-
-## 🏆 Highlights
-
-- **Yandex Algorithms Bootcamp 3.0** (2023): Top 200/2000 participants
-- **CAYSS Scholarship** at Chung-Ang University (2024-Present)
-- **Led 3-developer team** on enterprise telecom project at YADRO
-- **Teaching Assistant** for Computer Vision course (Spring 2025)
-
----
-
-## 🚀 Featured Projects
-
-[**VLM Optimization**](/blog/2025/12/vqa-optimization/) - Comprehensive benchmark of quantization and pruning strategies for Vision-Language Models.
-
-
-[**Feature Selection Library**](https://github.com/KhrTim/Feature_Selection) - Research implementations supporting multiple publications
-
-[**Menu Management App**](https://product-list-cv.web.app/#/) - Production Flutter/Firebase application with real-time sync
-
-**L1-L2 Communication Visualizer** - Enterprise telecommunications analysis tool (YADRO proprietary)
-
----
-
-## 📫 Let's Connect
-
-I'm always interested in collaborating on research related to:
-- LLM optimization and efficiency
-- Efficient machine learning methods
-- Real-world AI applications
-
-**Email:** timurkhairulov@cau.ac.kr
-**GitHub:** [KhrTim](https://github.com/KhrTim)
-**LinkedIn:** [timur-khairulov](https://linkedin.com/in/timur-khairulov-b09791250)
-**Google Scholar:** [Publications](https://scholar.google.com/citations?user=-XrW5PAAAAAJ)
-
----
-
-📄 **[Download My CV](/files/Timur_Khairulov_CV.pdf)** | 📄 **[Academic Transcript](/files/transcript.pdf)**
+<section class="blk" style="padding-top:0">
+  <div class="wrap reveal">
+    <div class="contact">
+      <h2 class="sec-h">get_in_touch</h2>
+      <p>Open to collaboration on LLM/VLM efficiency, unsupervised learning, and applied AI. The fastest way to reach me is email.</p>
+      <div class="links">
+        <a href="mailto:timurkhairulov@cau.ac.kr">timurkhairulov@cau.ac.kr</a>
+        <a href="https://github.com/KhrTim" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=-XrW5PAAAAAJ" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://linkedin.com/in/timur-khairulov-b09791250" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/cv/">Full CV</a>
+      </div>
+    </div>
+  </div>
+</section>

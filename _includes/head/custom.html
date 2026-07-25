@@ -2,8 +2,50 @@
 
 <!-- start custom head snippets -->
 
+<!-- Theme: apply saved / system preference before paint (no flash) + toggle handler -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var dark = saved ? saved === 'dark' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+      else document.documentElement.removeAttribute('data-theme');
+    } catch (e) {}
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.theme-toggle');
+      if (!btn) return;
+      var goDark = document.documentElement.getAttribute('data-theme') !== 'dark';
+      if (goDark) document.documentElement.setAttribute('data-theme', 'dark');
+      else document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('theme', goDark ? 'dark' : 'light'); } catch (e) {}
+    });
+  })();
+</script>
+
+<style>
+  .theme-toggle { -webkit-appearance: none; appearance: none; background: transparent; border: 0; color: inherit;
+    cursor: pointer; padding: 6px; margin: 0; line-height: 0; border-radius: 8px; opacity: 0.68;
+    transition: opacity 0.15s ease, background 0.15s ease; display: inline-flex; align-items: center; vertical-align: middle; }
+  .theme-toggle:hover { opacity: 1; background: color-mix(in srgb, currentColor 12%, transparent); }
+  .theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .theme-toggle .i-sun { display: none; }
+  html[data-theme="dark"] .theme-toggle .i-sun { display: block; }
+  html[data-theme="dark"] .theme-toggle .i-moon { display: none; }
+  /* toggle inside the interior (academicpages) masthead */
+  .masthead__inner-wrap { position: relative; }
+  .masthead .theme-toggle { position: absolute; top: 50%; right: 1em; transform: translateY(-50%); z-index: 11; color: var(--global-masthead-link-color); }
+  @media (max-width: 600px) { .masthead .theme-toggle { display: none; } }
+  /* dark-mode fix for the masthead's hardcoded white background */
+  html[data-theme="dark"] .masthead { background: rgba(15, 23, 42, 0.85); border-bottom-color: rgba(148, 163, 184, 0.14); box-shadow: none; }
+</style>
+
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+
+<!-- Inter web font for a modern type system -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
