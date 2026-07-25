@@ -37,6 +37,18 @@
   @media (max-width: 600px) { .masthead .theme-toggle { display: none; } }
   /* dark-mode fix for the masthead's hardcoded white background */
   html[data-theme="dark"] .masthead { background: rgba(15, 23, 42, 0.85); border-bottom-color: rgba(148, 163, 184, 0.14); box-shadow: none; }
+
+  /* ---- propagate homepage aesthetic to interior pages ---- */
+  :root { --site-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --global-link-color: #0891b2; --global-link-color-hover: #0e7490; --global-link-color-visited: #0e7490;
+    --global-masthead-link-color-hover: #0891b2; }
+  html[data-theme="dark"] { --global-link-color: #22d3ee; --global-link-color-hover: #67e8f9; --global-link-color-visited: #67e8f9;
+    --global-masthead-link-color-hover: #22d3ee; }
+  /* interior header: mono + lowercase, matching the homepage nav */
+  .masthead__menu-item a { font-family: var(--site-mono); font-size: 0.82rem; letter-spacing: 0; }
+  .masthead__menu-item--lg a { font-family: var(--site-mono); font-weight: 600; font-size: 0.98rem; }
+  .masthead .brand-dot { color: #0891b2; }
+  html[data-theme="dark"] .masthead .brand-dot { color: #22d3ee; }
 </style>
 
 <!-- Support for Academicons -->
