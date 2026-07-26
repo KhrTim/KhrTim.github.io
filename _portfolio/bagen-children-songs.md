@@ -6,7 +6,6 @@ date: 2025-01-01
 category: lab
 ---
 
-## BAGen: Background Animation Generation for Children's Songs
 
 A comprehensive system for automatic production and visualization of children's songs with both graphical and text-based user interfaces.
 

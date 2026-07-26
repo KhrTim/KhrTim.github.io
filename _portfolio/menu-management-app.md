@@ -7,7 +7,6 @@ category: personal
 published: false
 ---
 
-## Menu Management Application
 
 A full-stack cross-platform application designed for cafe and restaurant menu management with real-time price updates and inventory tracking.
 

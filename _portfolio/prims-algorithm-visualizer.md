@@ -7,7 +7,6 @@ category: personal
 published: false
 ---
 
-## Prim's Algorithm Visualizer
 
 An interactive application for creating graphs and visualizing Prim's minimum spanning tree algorithm using computer graphics.
 

@@ -6,7 +6,6 @@ date: 2024-01-01
 category: professional
 ---
 
-## C++ Software Developer - LTE L1 Layer
 
 **[YADRO](https://yadro.com/)** | May 2023 - February 2024
 

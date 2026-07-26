@@ -7,7 +7,6 @@ category: professional
 published: false
 ---
 
-## L1-L2 Communication Messages Visualization Application
 
 **Company:** [YADRO](https://yadro.com/)  
 **Duration:** 6 months (2023)  

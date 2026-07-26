@@ -6,7 +6,6 @@ date: 2025-11-13
 category: ml-research
 ---
 
-# Curriculum Learning Fine-Tuning for Mathematical Reasoning
 
 **Technologies:** Python, PyTorch, Transformers, LoRA, HuggingFace, Weights & Biases
 **Duration:** November 2025

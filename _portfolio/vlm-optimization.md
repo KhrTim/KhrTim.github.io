@@ -6,7 +6,6 @@ date: 2025-12-01
 category: ml-engineering
 ---
 
-# VLM Compression: Optimization Techniques for Vision-Language Models
 
 **Technologies:** Python, PyTorch, BitsAndBytes, Gradio, HuggingFace
 **Duration:** December 2025

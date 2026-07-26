@@ -6,7 +6,6 @@ date: 2025-08-01
 category: lab
 ---
 
-## Feature Selection Research Implementation
 
 A comprehensive collection of unsupervised feature selection algorithms and experimental frameworks developed for academic research purposes.
 
