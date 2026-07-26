@@ -13,8 +13,7 @@ redirect_from:
 
 ---
 
-Education
-======
+## Education
 * **M.S. in Artificial Intelligence**, Chung-Ang University, February 2024--Present
   * CAYSS scholarship recipient
   * GPA: 4.22 out of 4.5
@@ -28,23 +27,20 @@ Education
   * GPA: 3.9 out of 4.5
   * [Certificate](https://github.com/KhrTim/Certificates/blob/main/KHAIRULOV%20TIMUR-1.pdf)
 
-Research Interests
-======
+## Research Interests
 * **Large Language Models (LLMs)**: Optimization, compression, and efficiency
 * **Vision-Language Models (VLMs)**: Model compression and efficient deployment
 * **Feature Selection and Information Theory**: Unsupervised methods and entropy optimization
 * **Efficient Neural Networks**: Quantization, pruning, and optimized architectures for resource-constrained environments
 
-Work Experience
-======
+## Work Experience
 * **May 2023--February 2024: C++ Software Developer LTE L1**
   * YADRO
   * 4G Base Station Development
   * Used AVX and C++ for developing real-time modules
   * Specialized in telecommunications and signal processing
 
-Technical Skills
-======
+## Technical Skills
 * **Programming Languages**
   * C/C++, Python, MATLAB, Dart, SQL
 * **Machine Learning & AI**
@@ -58,8 +54,7 @@ Technical Skills
   * Russian (Native)
   * Korean (Basic)
 
-Achievements & Awards
-======
+## Achievements & Awards
 * **[Yandex Algorithms Bootcamp 3.0](https://github.com/KhrTim/Certificates/blob/main/yandex-certificate.pdf)** (2023)
   * Top 200 out of 2000 participants
   * Solved 33 out of 40 contest tasks
@@ -68,14 +63,12 @@ Achievements & Awards
 * **Academic Scholarship**, Electrotechnical University "LETI" (2018--2023)
   * Consistent academic excellence throughout undergraduate studies
 
-Publications
-======
+## Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Teaching
-======
+## Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>

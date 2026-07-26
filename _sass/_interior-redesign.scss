@@ -1,0 +1,172 @@
+/* ==========================================================================
+   INTERIOR REDESIGN
+   Bring the custom landing-page design language to the academicpages
+   interior pages (Publications, Portfolio, Blog, CV, single items).
+   All rules are scoped to interior containers (.archive, .page__content,
+   .sidebar, .page__footer, #main) so the homepage (body.page-home) is
+   never affected.
+   ========================================================================== */
+
+:root {
+  --x-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --x-c1: #0891b2; --x-c2: #7c3aed; --x-c3: #db2777; --x-c4: #4d7c0f; --x-c5: #b45309;
+  --x-card: rgba(15, 23, 42, 0.025);
+  --x-card-shadow: rgba(15, 23, 42, 0.5);
+}
+html[data-theme="dark"] {
+  --x-c1: #22d3ee; --x-c2: #a78bfa; --x-c3: #f472b6; --x-c4: #a3e635; --x-c5: #fbbf24;
+  --x-card: rgba(148, 163, 184, 0.05);
+  --x-card-shadow: rgba(0, 0, 0, 0.8);
+}
+
+/* ---- page title ---- */
+#main .page__title,
+.archive .page__title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 2.4em;
+}
+
+/* intro paragraph right under the title */
+.archive > p:first-of-type {
+  color: var(--global-text-color-light);
+  font-size: 1.05em;
+  max-width: 46em;
+}
+.wordwrap {
+  font-family: var(--x-mono);
+  font-size: 0.85em;
+}
+
+/* ---- section headers (bare h2 in .archive / CV content) -> mono "## " kicker ---- */
+.archive h2:not(.archive__item-title),
+.archive h1:not(.page__title),
+.archive .archive__subtitle {
+  font-family: var(--x-mono);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 2.6rem 0 1.1rem;
+  color: var(--x-c1);
+  border: 0;
+}
+.archive h2:not(.archive__item-title)::before,
+.archive h1:not(.page__title)::before,
+.archive .archive__subtitle::before {
+  content: "## ";
+  color: var(--global-text-color-light);
+  opacity: 0.55;
+}
+/* drop the redundant rule right after a section header */
+.archive h2 + hr { display: none; }
+.archive hr,
+.page__content hr {
+  border: 0;
+  height: 1px;
+  background: var(--global-border-color);
+  opacity: 0.7;
+  margin: 1.4rem 0;
+}
+
+/* ---- archive items rendered as cards ---- */
+.archive .list__item { margin-bottom: 1rem; }
+.archive .archive__item {
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  background: var(--x-card);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.archive .archive__item::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--x-c1), var(--x-c2));
+  opacity: 0; transition: opacity 0.2s ease;
+}
+.archive .archive__item:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--x-c1) 50%, transparent);
+  box-shadow: 0 16px 38px -22px var(--x-card-shadow);
+}
+.archive .archive__item:hover::before { opacity: 1; }
+
+.archive__item-title {
+  margin: 0 0 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.32;
+  border: 0;
+  padding: 0;
+}
+.archive__item-title a[rel="permalink"],
+.archive__item-title a { color: var(--global-text-color); text-decoration: none; }
+.archive__item-title a:hover { color: var(--x-c1); }
+.archive__item-title .fa-link { font-size: 0.66em; opacity: 0.35; margin-left: 0.35em; }
+
+.archive__item .page__date,
+.archive__item .page__meta {
+  font-family: var(--x-mono);
+  font-size: 0.76rem;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.5rem;
+}
+.archive__item-excerpt {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  margin: 0.4rem 0 0;
+}
+.archive__item-excerpt em { color: var(--x-c1); font-style: normal; font-family: var(--x-mono); font-size: 0.9em; }
+/* download / bibtex links inside a card */
+.archive__item p a { color: var(--x-c1); font-weight: 500; }
+
+/* ---- blog post / single-item body headings: keep as bold Inter (not kickers) ---- */
+.page__content h2,
+.page__content h3 { font-weight: 700; letter-spacing: -0.01em; }
+.page__content h2 {
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.3em;
+}
+
+/* ---- sidebar author profile ---- */
+.sidebar .author__avatar img,
+.author__avatar img {
+  border-radius: 14px !important;
+  border: 1px solid var(--global-border-color);
+  max-width: 165px;
+}
+.author__name { font-weight: 700; letter-spacing: -0.01em; }
+.author__bio { color: var(--global-text-color-light); }
+.author__urls { font-family: var(--x-mono); font-size: 0.8rem; }
+.author__urls a { color: var(--global-text-color); }
+.author__urls a:hover { color: var(--x-c1); }
+.author__urls li { padding: 0.15em 0; }
+.author__urls i,
+.author__urls .icon-pad-right,
+.author__urls .ai { color: var(--x-c1); }
+/* the template's non-functional Follow button */
+.author__urls-wrapper > .btn--inverse { display: none; }
+
+/* ---- direct-link / .btn buttons inside content ---- */
+#main .page__content .btn {
+  background: color-mix(in srgb, var(--x-c1) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--x-c1) 45%, transparent) !important;
+  color: var(--global-text-color) !important;
+  border-radius: 8px;
+  font-family: var(--x-mono);
+  font-weight: 500;
+}
+#main .page__content .btn:hover { background: color-mix(in srgb, var(--x-c1) 26%, transparent); }
+
+/* ---- footer: minimal + mono ---- */
+.page__footer {
+  background: transparent;
+  border-top: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+  font-family: var(--x-mono);
+  font-size: 0.78em;
+}
+.page__footer a { color: var(--global-text-color-light); }
+.page__footer a:hover { color: var(--x-c1); }
+.page__footer footer { padding-top: 1.5em; }
