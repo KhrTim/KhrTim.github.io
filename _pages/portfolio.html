@@ -39,10 +39,3 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-<!-- Personal Projects Section -->
-<h2>Personal Projects</h2><hr />
-{% assign personal_posts = site.portfolio | where: "category", "personal" | sort: "date" | reverse %}
-{% for post in personal_posts %}
-  {% include archive-single.html %}
-{% endfor %}
-

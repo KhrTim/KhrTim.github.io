@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Learning Fine-Tuning for Mathematical Reasoning"
-excerpt: "Fine-tuning SmolLM2 and Phi-3 on GSM8K using complexity-based curriculum learning, achieving 1.37% accuracy improvement on difficult problems"
+excerpt: "Fine-tuning SmolLM2 and Phi-2 on GSM8K using complexity-based curriculum learning, achieving 1.37% accuracy improvement after the difficult curriculum stage"
 collection: portfolio
 date: 2025-11-13
 category: ml-research
@@ -18,8 +18,7 @@ Investigated whether curriculum learning—training models progressively from ea
 ## Key Results
 
 **Complexity-Based Curriculum (✅ Success):**
-- **+1.37% accuracy improvement** on difficult problems (Phi-3 2.7B)
-- **+2.34% improvement** on medium difficulty problems
+- **+1.37% accuracy improvement** after the difficult curriculum stage (Phi-2 2.7B)
 - Validates multi-factor difficulty estimation approach
 
 **Answer-Length Curriculum (❌ Failure):**
@@ -29,19 +28,18 @@ Investigated whether curriculum learning—training models progressively from ea
 
 **Model Size Dependency:**
 - Medium models (2.7B) benefit most from curriculum learning
-- Tiny models (135M) show minimal improvement (insufficient capacity)
+- Tiny models (135M) show no improvement (insufficient capacity)
 - Suggests curriculum learning effectiveness scales with model size
 
 ## Technical Implementation
 
 **Models Fine-Tuned:**
-- **Phi-3 (2.7B parameters)** - best curriculum learning gains
+- **Phi-2 (2.7B parameters)** - best curriculum learning gains
 - **SmolLM2 (135M parameters)** - baseline for small model behavior
 
 **Dataset:**
 - **GSM8K:** 8.5K grade school math word problems
 - Split into 3 curriculum stages: Easy (33%) → Normal (33%) → Difficult (34%)
-- 500 held-out samples for evaluation
 
 **Curriculum Strategies:**
 
@@ -51,9 +49,9 @@ Investigated whether curriculum learning—training models progressively from ea
    - Result: Degraded performance (wrong assumption)
 
 2. **Complexity-Based Strategy (Novel):**
-   - Multi-factor scoring: `complexity = solution_steps × operation_complexity`
+   - Multi-factor scoring: `complexity = answer_length + (operation_difficulty × number_count)`
    - Accounts for reasoning chains and mathematical operations
-   - Result: Improved performance on difficult problems
+   - Result: Improved performance after the difficult curriculum stage
 
 **Training Approach:**
 - **LoRA fine-tuning** for parameter efficiency (r=16, alpha=32)
@@ -85,7 +83,7 @@ Investigated whether curriculum learning—training models progressively from ea
    - Poorly-designed curriculum: -3.51% degradation
 
 2. **Multi-factor difficulty estimation is crucial**
-   - Complexity score (steps × operations) works
+   - Complexity score (answer length + operations × numbers) works
    - Simple heuristics (answer length) fail
 
 3. **Model capacity threshold exists**
@@ -100,7 +98,7 @@ Investigated whether curriculum learning—training models progressively from ea
 ## Honest Reporting
 
 **What Worked:**
-- Complexity-based curriculum improved difficult problem accuracy
+- Complexity-based curriculum improved accuracy after the difficult stage
 - Model merging strategy effective for knowledge retention
 - Reproducible pipeline with comprehensive logging
 
@@ -116,7 +114,6 @@ Investigated whether curriculum learning—training models progressively from ea
 - [Full Blog Post](/blog/2025/11/curriculum-learning-math-reasoning/) - Detailed analysis, visualizations, and insights
 - [Interactive Jupyter Notebook](/files/curriculum_learning_blog_post.ipynb) - Executable analysis with Plotly charts
 - [GitHub Repository](https://github.com/KhrTim/Curriculum-Learning-Fine-Tuning) - Complete training and evaluation code
-- [HuggingFace Demo](https://huggingface.co/spaces/...) - Compare baseline vs. curriculum models
 - Training logs and curriculum difficulty distributions
 
 ## Impact & Lessons
@@ -134,7 +131,7 @@ Investigated whether curriculum learning—training models progressively from ea
 **ML Engineering:**
 - Complete end-to-end pipeline from hypothesis to deployment
 - Comprehensive evaluation and honest reporting of failures
-- Reproducible research with public code and demos
+- Reproducible research with public code
 
 ---
 

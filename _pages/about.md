@@ -38,12 +38,12 @@ redirect_from:
       <div class="term-body" id="term-body">
 <div class="ln c-cmd">optimize --model llava-7b</div>
 <div class="ln c-dim">  loading weights ........... <span class="c-am">14.2 GB</span></div>
-<div class="ln c-dim">  quantize 4-bit <span class="bar">▓▓▓▓▓▓▓▓</span> <span class="c-ok">ok</span></div>
+<div class="ln c-dim">  quantize 8-bit <span class="bar">▓▓▓▓▓▓▓▓</span> <span class="c-ok">ok</span></div>
 <div class="ln c-dim">  prune attention heads ..... <span class="c-ok">ok</span></div>
 <div class="ln c-dim">  ────────────────────────────</div>
 <div class="ln c-dim">  output .................... <span class="c-cy">7.1 GB</span></div>
 <div class="ln c-cy">  size −50%  ·  accuracy −1.8%</div>
-<div class="ln c-ok">  ✓ shipped to production</div>
+<div class="ln c-ok">  ✓ benchmark complete</div>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@ redirect_from:
 
 <div class="stats reveal">
   <div class="cell"><div class="num">~<span data-count="50" data-dec="0">50</span><span class="u">%</span></div><div class="lbl">smaller VLMs, &lt;2% accuracy loss</div></div>
-  <div class="cell"><div class="num"><span data-count="5">5</span></div><div class="lbl">peer-reviewed publications</div></div>
+  <div class="cell"><div class="num"><span data-count="5">5</span></div><div class="lbl">publications &amp; theses</div></div>
   <div class="cell"><div class="num"><span data-count="4.22" data-dec="1">4.22</span><span class="u">/4.5</span></div><div class="lbl">M.S. GPA · CAYSS scholar</div></div>
   <div class="cell"><div class="num"><span data-count="200">200</span></div><div class="lbl">Yandex Bootcamp, top 200 / 2000</div></div>
 </div>
@@ -77,7 +77,7 @@ redirect_from:
         <div class="idx">03 / research code</div>
         <h3>Feature Selection Library</h3>
         <p>Unsupervised feature-selection algorithms and experiments behind several publications and my thesis.</p>
-        <div class="tags"><span class="tag">Info Theory</span><span class="tag">scikit-learn</span><span class="tag">Research</span></div>
+        <div class="tags"><span class="tag">Info Theory</span><span class="tag">MATLAB</span><span class="tag">Research</span></div>
       </a>
     </div>
   </div>

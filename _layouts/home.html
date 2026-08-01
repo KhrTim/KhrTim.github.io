@@ -23,14 +23,14 @@ layout: compress
         --border-hi: rgba(8, 145, 178, 0.5);
         --text:      #0f172a;
         --muted:     #475569;
-        --faint:     #94a3b8;
-        --accent:    #0891b2;
+        --faint:     #5f6b7c;
+        --accent:    #0e7490;
         --accent-2:  #4d7c0f;
         --amber:     #b45309;
         --accent-dim:rgba(8, 145, 178, 0.10);
-        --c1: #0891b2;  /* cyan   */
+        --c1: #0e7490;  /* cyan   */
         --c2: #7c3aed;  /* violet */
-        --c3: #db2777;  /* pink   */
+        --c3: #be185d;  /* pink   */
         --c4: #4d7c0f;  /* lime   */
         --c5: #b45309;  /* amber  */
         --glow: 0.10;
@@ -90,9 +90,8 @@ layout: compress
       @media (max-width: 720px) {
         .nav .wrap { height: auto; flex-wrap: wrap; padding-top: 0.7rem; padding-bottom: 0.7rem; gap: 0.35rem 0.9rem; }
         .brand { flex: 1 0 100%; }
-        .nav-links { gap: 0.9rem; width: 100%; }
+        .nav-links { gap: 0.9rem; width: 100%; flex-wrap: wrap; }
         .nav-links a { font-size: 0.76rem; }
-        .nav-links .hide-sm { display: none; }
       }
 
       /* ---- hero ---- */
@@ -156,7 +155,7 @@ layout: compress
       .bar { display: inline-block; color: #22d3ee; letter-spacing: 1px; }
 
       /* ---- stats ---- */
-      .stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1px; background: var(--border); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+      .stats { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1px; background: var(--border); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
       .stats .cell { background: var(--bg); padding: 1.5rem 1.4rem; min-width: 0; }
       .stats .num { font-family: var(--mono); font-size: 1.5rem; font-weight: 600; color: var(--text); }
       .stats .cell:nth-child(1) .num { color: var(--c1); } .stats .cell:nth-child(1) .num .u { color: var(--c1); }
@@ -239,7 +238,7 @@ layout: compress
         <a href="/" class="brand">timur<span class="dot">.</span>research</a>
         <div class="nav-links">
           {% for link in site.data.navigation.main %}
-            <a href="{{ link.url }}"{% if link.title == "Teaching" or link.title == "Blog" %} class="hide-sm"{% endif %}>{{ link.title | downcase }}</a>
+            <a href="{{ link.url }}">{{ link.title | downcase }}</a>
           {% endfor %}
           <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github</a>
           <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">

@@ -12,5 +12,5 @@ Unsupervised feature selection aims to reduce data dimensionality by eliminating
 
 **Institution:** Chung-Ang University, Department of Artificial Intelligence  
 **Expected Completion:** 2025  
-**Advisor:** Jeasung Lee
+**Advisor:** Jaesung Lee  
 **Keywords:** Unsupervised Feature Selection, Joint Entropy, Pattern Discrimination, Information Theory

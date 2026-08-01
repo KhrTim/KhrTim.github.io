@@ -40,6 +40,11 @@
   }
 }
 
+@media (max-width: 600px) {
+  .masthead { position: static; }
+  body { padding-top: 0; }
+}
+
 .masthead__menu {
 
   ul {
@@ -53,7 +58,6 @@
 .masthead__menu-item {
   display: block;
   list-style-type: none;
-  white-space: nowrap;
 
   &--lg {
     padding-right: 2em;

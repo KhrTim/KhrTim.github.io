@@ -11,7 +11,7 @@ tags:
 excerpt: "I trained two language models on math problems using curriculum learning with different difficulty estimation methods. The surprising finding? The wrong curriculum can actually hurt performance. Here's what I learned about training LLMs for mathematical reasoning."
 ---
 
-# TL;DR
+## TL;DR
 I fine-tuned two models (PHI-2 and a 135M smolLM2) using curriculum learning, and here’s what stood out:
 
 - Curriculum design matters — the complexity-based curriculum consistently outperformed the naive answer-length curriculum.
@@ -22,11 +22,11 @@ I fine-tuned two models (PHI-2 and a 135M smolLM2) using curriculum learning, an
 
 - Small models (135M) didn’t benefit — smolLM2 showed no positive gains across any curriculum or stage, implying curriculum learning is more effective for medium-sized models.
 
-# Introduction
+## Introduction
 Curriculum-learning based fine-tuning is an approach that is inspired by traditional human studying fashion: incrementally increase the difficulty of studying materials. For example: first kids learn basic math operations in school, then they study more complex concepts like functions, then more complex operations like derivation and integration.
 Current project is built on the same principle: split math tasks by difficulty and fine-tune the model in a complexity increasing curriculum. This small study tries to answer the question: Does curriculum-learning improve fine-tuning performance of LLMs?
 
-# Dataset
+## Dataset
 
 I was interested to know how well can LLMs solve maths tasks, so gsm8k was chosen as a dataset because it's popular, contains enough samples and good answers. Also, it doens't contain very complex operations, but rather tests the reasononing ability of models.
 
@@ -40,15 +40,15 @@ Example of train sample from main variant of gsm8k dataset
 }
 ```
 
-# Curriculum composition
+## Curriculum composition
 
 As will be evident from experimental results in the following sections, composition of the curriculum, i.e. the condition for splitting the dataset samples into categories of difficulty can either improve model's fine-tuning performance or make model worse than the baseline, so it's cruscial to develop a strategy for effective dataset split.
 
-## 1. Naive approach - Answer Length
+### 1. Naive approach - Answer Length
 
 One of the first ideas that came up was to split the dataset based on the answer length, as it seems intuitive that the logner the qustion the more difficult it is. After creating a histogram of question lenghts in the dataset, it looked like a normal distibution, so I decieded to split dataset lengths into percentiles where the 50% of samples belong to 'normal' difficulty and 25% for 'easy' and 'difficult'.
 
-![Answer Length Distribution](/images/blog/curriculum-learning/Answer_Length_distribution.png "Answer Length Distribution")
+![Histogram of GSM8K answer lengths, roughly bell-shaped, with the percentile cut-offs used for the easy, normal and difficult splits](/images/blog/curriculum-learning/Answer_Length_distribution.png)
 
 Number of samples in each category:
 ```python
@@ -58,7 +58,7 @@ difficult: 3248 samples
 ```
 
 
-## 2. Composed approach - Complexity Score
+### 2. Composed approach - Complexity Score
 
 For the more advanced option, I decided to use some kind of a composition of several scores. More specifically, to me it seemed reasonable to use length of the answer \\(L_a\\), difficulty of mathematical operations in question \\(OP_q\\), and amount of numbers in question \\(N_q\\).
 Eventually I came up with this formula for the question difficulty estimation:
@@ -83,7 +83,7 @@ After calculating the score of each sample, all samples were equally splitted in
 Samples difficulties range from 3 to 137, where lower score represents easier task.
 Distribution of samples difficulties is presented in the follwoing figure:
 
-![Complexity Score Distribution](/images/blog/curriculum-learning/Complexity_Score_distribution.png "Complexity Score Distribution")
+![Histogram of GSM8K sample complexity scores, ranging from 3 to 137, split into three equally sized difficulty categories](/images/blog/curriculum-learning/Complexity_Score_distribution.png)
 
 Number of samples in each category:
 ```python
@@ -121,9 +121,9 @@ copmlexity_score = 14.0
 ```
 
 
-# Experiments
+## Experiments
 
-## Fine-tuning
+### Fine-tuning
 
 Models were fine-tuned with Huggingface SFTTrainer with the following settings:
 
@@ -164,26 +164,26 @@ lora_config = LoraConfig(
 - smolLm2: `target_modules=["q_proj", "k_proj", "v_proj", "o_proj"]`
 
 
-## Models selection
+### Models selection
 For comparison, 2 models were chosen:
 small smolLm2 with 135M parameters and middle-size model - phi2 from microsoft with 2.7B parameters.
 
 
-## Evaluation
+### Evaluation
 
 For evaluation, we used comparison of model's prediction with the actual answer. In order to use this evaluation model had to learn a dataset formatting - '####' in the end after wich the numerical answer is provided.
 
 
-# Results
+## Results
 
-## Baseline
+### Baseline
 Baseline results are based on the regular fine-tuning of models on the whole dataset.
 PHI2 demonstrated 30.27% answer accuracy and 97.07% formatting accuracy, whereas smolLM2 2.54% answer accuracy and 72.46% formatting accuracy
 
-![Baseline Fine-Tuning Results](/images/blog/curriculum-learning/Baseline.png "Baseline Fine-Tuning Results")
+![Answer and formatting accuracy of PHI-2 and smolLM2 after regular fine-tuning on the full dataset](/images/blog/curriculum-learning/Baseline.png)
 
 
-## Curriculum learning
+### Curriculum learning
 
 The naive (answer length-based) fine-tuning approach has shown the following results:
 
@@ -200,7 +200,7 @@ PHI2: 29.49 (-0.78%) - answer accuracy, 85.94 (-11.13%) - formatting accuracy
 smolLM2: 0.98 (-1.56%) - answer accuracy, 68.36 (-4.10%) - formatting accuracy
 PHI2: 29.88 (-0.39%) - answer accuracy, 91.6 (-5.47%) - formatting accuracy
 
-![Answer Length Training Results](/images/blog/curriculum-learning/Answer_Length.png "Answer Length Training Results")
+![Answer and formatting accuracy of PHI-2 and smolLM2 after each stage of the answer-length curriculum](/images/blog/curriculum-learning/Answer_Length.png)
 
 
 
@@ -218,12 +218,12 @@ PHI2: 28.91 (-1.36%) - answer accuracy, 97.66 (+0.59%) - formatting accuracy
 smolLM2: 1.56 (-0.98%) - answer accuracy, 65.63 (-6.83%) - formatting accuracy;
 PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 
-![Complexity Score Training Results](/images/blog/curriculum-learning/Complexity_Score.png "Complexity Score Training Results")
+![Answer and formatting accuracy of PHI-2 and smolLM2 after each stage of the complexity-score curriculum](/images/blog/curriculum-learning/Complexity_Score.png)
 
 
 
 
-### Naive (Answer Length-Based) Fine-Tuning Results
+#### Naive (Answer Length-Based) Fine-Tuning Results
 
 | Stage      | Model     | Answer Accuracy | Change (%) | Formatting Accuracy | Change (%) |
 |-----------|----------|----------------|------------|-------------------|------------|
@@ -234,7 +234,7 @@ PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 | Difficult | smolLM2  | 0.98           | -1.56%     | 68.36             | -4.10%     |
 |           | PHI2     | 29.88          | -0.39%     | 91.60             | -5.47%     |
 
-### Advanced Curriculum Fine-Tuning Results
+#### Advanced Curriculum Fine-Tuning Results
 
 | Stage      | Model     | Answer Accuracy | Change (%) | Formatting Accuracy | Change (%) |
 |-----------|----------|----------------|------------|-------------------|------------|
@@ -247,15 +247,15 @@ PHI2: 31.64 (+1.37%) - answer accuracy, 96.29 (-0.78%) - formatting accuracy
 
 
 
-![Answer Length Training Progression](/images/blog/curriculum-learning/Answer_Length_iterative.png "Answer Length Training Progression")
+![Accuracy of PHI-2 and smolLM2 plotted across the easy, normal and difficult stages of the answer-length curriculum](/images/blog/curriculum-learning/Answer_Length_iterative.png)
 
 
 
-![Complexity Score Training Progression](/images/blog/curriculum-learning/Complexity_Score_iterative.png "Complexity Score Training Progression")
+![Accuracy of PHI-2 and smolLM2 plotted across the easy, normal and difficult stages of the complexity-score curriculum](/images/blog/curriculum-learning/Complexity_Score_iterative.png)
 
 
 
-# Conclusion
+## Conclusion
 Overall, these experiments showed that curriculum learning can help—but only when the curriculum actually reflects task difficulty. The naive answer-length approach consistently hurt both models, confirming that not all “easy-to-hard” progressions are meaningful.
 
 The advanced, complexity-based curriculum did work: PHI-2 gained +1.37% answer accuracy in the final stage and even saw a small formatting boost at the Normal stage. In contrast, the 135M model showed no improvements anywhere, suggesting that very small models just don’t benefit from staged training and may even get confused by it.

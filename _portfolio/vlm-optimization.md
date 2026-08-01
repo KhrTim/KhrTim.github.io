@@ -54,7 +54,6 @@ Implemented and benchmarked multiple compression techniques for Vision-Language 
 **Interactive Demo:**
 - Built Gradio interface comparing inference speed across compression levels
 - Real-time visualization of quality vs. speed tradeoffs
-- Deployed on HuggingFace Spaces for public access
 
 **Production-Ready Code:**
 - Reproducible pipeline for model compression
@@ -79,7 +78,6 @@ Implemented and benchmarked multiple compression techniques for Vision-Language 
 
 - [Full Blog Post](/blog/2025/12/vqa-optimization/) - Detailed benchmark results and visualizations
 - [GitHub Repository](https://github.com/KhrTim/VLM-compression-project) - Complete implementation
-- [Interactive Demo](https://huggingface.co/spaces/...) - Try the compressed models
 - Benchmark data and efficiency frontier plots
 
 ---
